@@ -15,8 +15,19 @@
 }
 
 .nav-logo {
-  width: 120px;
+  width: 219px;
   height: 100%;
+  margin-top: -6px;
+}
+
+.nav-logo-span {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-logo-color {
+  color: #f208ba;
 }
 
 .nav-menu {
@@ -357,7 +368,7 @@
 .feature-card-contant {
   width: 100%;
   height: auto;
-  padding: 0 20px 10px 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .box {
@@ -388,13 +399,13 @@
   font-style: Bold;
   color: #ffffff;
   letter-spacing: 0%;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .box p {
   font-size: 16px;
   color: #bbb8c5;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .clock {
@@ -473,5 +484,107 @@
   justify-content: center;
   align-items: center;
 }
-
 /* start feature section */
+
+/* start footer  */
+
+.footer {
+  width: 1600px;
+  height: 412px;
+  background-image: url(./assets/footer-bg.png);
+  background-size: cover;
+  padding: 130px 150px;
+}
+
+.footer-contant {
+  width: 100%;
+  height: 172px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 410px;
+  height: 60px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.footer-logo-span {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer-logo-color {
+  color: #f208ba;
+}
+
+.footer-social {
+  width: 544px;
+  height: 24px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.footer-social-link {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+
+.spotify {
+  width: 87px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.apple-podcasts {
+  width: 152px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.youtube {
+  width: 99px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.twiter {
+  width: 86px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1px;
+  gap: 7px;
+}
+
+.footer-social p {
+  font-size: 16px;
+  color: #bbb8c5;
+  padding-bottom: 5px;
+}
+
+.copy-right {
+  width: 100%;
+  height: 24px;
+  text-align: center;
+  font-size: 16px;
+  color: #bbb8c5;
+}
+/* end footer  */
