@@ -162,7 +162,7 @@
 }
 /* end hero section */
 
-/* add about the podcast section */
+/* start about the podcast section */
 .about-podcast {
   width: 1600px;
   height: 647px;
@@ -221,3 +221,96 @@
   text-transform: uppercase;
 }
 /* end about the podcast section */
+
+/* start why choose tcechwave section */
+.choose-section {
+  width: 1600px;
+  height: 1122px;
+  padding: 120px 200px;
+  background: #230e3d;
+  text-align: center;
+}
+
+.choose-section h2 {
+  font-size: 42px;
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+
+.choose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 750px;
+  gap: 24px;
+}
+
+.card {
+  background: #2a0f4d;
+  border-radius: 20px;
+  padding: 24px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.audio {
+  grid-row: span 2;
+}
+
+.audio img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.mobile {
+  grid-column: span 2;
+}
+
+.mobile img {
+  width: 50px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.global {
+  grid-column: span 2;
+}
+
+.global img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.interviews {
+  grid-column: span 2;
+}
+
+.interviews img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.resource img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.8;
+  color: #bbb8c5;
+}
+/* end why choose tcechwave section */
