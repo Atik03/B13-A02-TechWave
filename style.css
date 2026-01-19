@@ -4,7 +4,7 @@
   width: 1600px;
   height: 76px;
   padding: 16px 200px 16px 200px;
-  background-color: rgb(65, 37, 103);
+  background-color: rgb(26, 12, 48);
 }
 
 .nav-container {
@@ -48,3 +48,117 @@
 }
 
 /* end navbar section */
+
+/* start hero section */
+.hero {
+  width: 1600px;
+  height: 760px;
+  background-image: url(./assets/hero-bg.png);
+  background-size: cover;
+  padding: 101px 525px;
+}
+.hero-container {
+  width: 550px;
+  height: 558px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40;
+}
+
+.hero-content {
+  width: 350px;
+  height: 350px;
+  border: 8px solid rgba(42, 24, 108, 1);
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f8af5d, #fa09b4, #a702e9);
+  padding: 69px 75px 81px 75px;
+  position: relative;
+}
+.microphone {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+.new {
+  width: 75px;
+  height: 38px;
+  background: #00ff88;
+  font-size: 18px;
+  border-radius: 30px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.hero-heading {
+  width: 550px;
+  height: 72px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 73px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.hero-subheading {
+  width: 550px;
+  height: 48px;
+  color: #bbb8c5;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-button-one {
+  width: 210px;
+  height: 44px;
+  background: linear-gradient(135deg, #f8af5d, #fa09b4, #a702e9);
+  border-radius: 30px;
+  color: white;
+  text-transform: capitalize;
+}
+.hero-button-one i {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.hero-button-one:hover {
+  background: transparent;
+  border: 2px solid #03e57f;
+  border-radius: 30px;
+  color: #03e57f;
+  transition: 0.3s;
+}
+
+.hero-button-two {
+  width: 147px;
+  height: 44px;
+  background: transparent;
+  border: 2px solid #03e57f;
+  border-radius: 30px;
+  color: #03e57f;
+  text-transform: capitalize;
+}
+
+.hero-button-two i {
+  font-size: 16px;
+  margin-right: 10px;
+}
+.hero-button-two:hover {
+  background: linear-gradient(135deg, #f8af5d, #fa09b4, #a702e9);
+  border-radius: 30px;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+/* end hero section */
