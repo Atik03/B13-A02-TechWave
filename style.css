@@ -1,7 +1,12 @@
-/* start navbar section */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* start navbar section */
 .navbar {
-  width: 1600px;
+  max-width: 1600px;
   height: 76px;
   padding: 16px 200px 16px 200px;
   background-color: rgb(26, 12, 48);
@@ -29,6 +34,16 @@
 .nav-logo-color {
   color: #f208ba;
 }
+
+/* HAMBURGER */
+.hamburger-icon {
+  display: none;
+  font-size: 40px;
+  text-align: left;
+  cursor: pointer;
+  color: white;
+}
+/* HAMBURGER */
 
 .nav-menu {
   width: 250px;
@@ -70,7 +85,7 @@
 
 /* start hero section */
 .hero {
-  width: 1600px;
+  max-width: 1600px;
   height: 760px;
   background-image: url(./assets/hero-bg.png);
   background-size: cover;
@@ -93,6 +108,8 @@
   border-radius: 50%;
   background: linear-gradient(135deg, #f8af5d, #fa09b4, #a702e9);
   padding: 69px 75px 81px 75px;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 .microphone {
@@ -101,6 +118,7 @@
   display: flex;
   justify-content: center;
 }
+
 .new {
   width: 75px;
   height: 38px;
@@ -135,6 +153,15 @@
   font-size: 16px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.hero-button {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
 }
 
 .hero-button-one {
@@ -183,7 +210,7 @@
 
 /* start about the podcast section */
 .about-podcast {
-  width: 1600px;
+  max-width: 1600px;
   height: 647px;
   background: #1a0c30;
   padding: 50px 200px 120px 200px;
@@ -243,7 +270,7 @@
 
 /* start why choose tcechwave section */
 .choose-section {
-  width: 1600px;
+  width: 100%;
   height: 1122px;
   padding: 120px 200px;
   background: #230e3d;
@@ -336,7 +363,7 @@
 
 /* start feature section */
 .feature {
-  width: 1600px;
+  max-width: 1600px;
   height: 1276px;
   background: #1a0b2e;
   padding: 120px 200px;
@@ -419,7 +446,7 @@
 
 .freature-container-two {
   width: 100%;
-  height: 379px;
+  height: auto;
 }
 
 .freature-container-two .h2 {
@@ -429,15 +456,17 @@
   text-align: center;
   letter-spacing: 0%;
   margin-bottom: 30px;
+  text-transform: capitalize;
 }
 
 .freature-container-two-contant {
   width: 100%;
-  height: 280px;
+  height: auto;
   background: #250e44;
   border-radius: 30px;
   padding: 40px;
   display: flex;
+  flex-direction: row;
   gap: 20px;
 }
 .photo {
@@ -445,21 +474,24 @@
   height: 200px;
   background-image: url(./assets/host.png);
   background-size: cover;
+  padding: 100px;
 }
 
 .alex-kumar-about {
   width: 896px;
-  height: 143px;
+  height: auto;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .alex-kumar-about h2 {
   font-size: 40px;
   font-weight: bold;
   color: #ffffff;
-  text-align-last: left;
   letter-spacing: 0%;
   margin-bottom: 16px;
+  text-transform: capitalize;
 }
 
 .alex-kumar-about p {
@@ -479,7 +511,6 @@
   height: 40px;
   border: 1px solid #533c72;
   border-radius: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,7 +520,7 @@
 /* start footer  */
 
 .footer {
-  width: 1600px;
+  max-width: 1600px;
   height: 412px;
   background-image: url(./assets/footer-bg.png);
   background-size: cover;
@@ -588,3 +619,320 @@
   color: #bbb8c5;
 }
 /* end footer  */
+
+/* start responsive design for mobile device 576px */
+/* ############################################# */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-logo {
+    width: auto;
+  }
+  /* #################################### */
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-content {
+    width: 260px;
+    height: 260px;
+    padding: 40px;
+  }
+
+  .microphone {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  .new {
+    top: 0;
+    right: 0;
+  }
+
+  .hero-heading {
+    width: 100%;
+    font-size: 40px;
+    line-height: 44px;
+    margin-top: 20px;
+  }
+
+  .hero-subheading {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .hero-button-one,
+  .hero-button-two {
+    width: 200px;
+    height: 44px;
+  }
+
+  /* ##################################### */
+
+  .about-podcast {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .podcast-heading {
+    height: auto;
+  }
+
+  .about-podcast h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .podcast-subheading {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+  }
+  .br-tag {
+    display: none;
+  }
+  .line {
+    margin-top: 40px;
+  }
+
+  .podcast-rating {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .podcast-rating-item {
+    width: 45%;
+  }
+
+  .podcast-rating-item h3 {
+    font-size: 40px;
+  }
+
+  .podcast-rating-item p {
+    font-size: 14px;
+  }
+
+  /* ###################################### */
+
+  .choose-section {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .choose-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .choose-grid {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  .audio,
+  .mobile,
+  .global,
+  .interviews {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  /* ####################################### */
+
+  .feature {
+    width: 100%;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .freature-container-one {
+    height: auto;
+    margin-bottom: 60px;
+  }
+
+  .freature-container-one h1 {
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .feature-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+  }
+
+  .feature-card-contant {
+    padding: 10px 0 20px 0;
+  }
+
+  .box h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .box p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .clock {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .freature-container-two {
+    height: auto;
+  }
+
+  .freature-container-two .h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .freature-container-two-contant {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .photo {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .alex-kumar-about {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .alex-kumar-about h2 {
+    font-size: 24px;
+  }
+
+  .alex-kumar-about p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .alex-kumar-social-link {
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .social-link {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* ############################################ */
+  .footer {
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .footer-contant {
+    gap: 20px;
+  }
+
+  .footer-logo {
+    margin-bottom: 15px;
+  }
+
+  .footer-logo-span {
+    font-size: 28px;
+  }
+
+  .footer-social {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .spotify,
+  .apple-podcasts,
+  .youtube,
+  .twiter {
+    width: auto;
+    justify-content: center;
+    gap: 5px;
+    font-size: 12px;
+    width: 40%;
+  }
+  .footer-social-link {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-social p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .copy-right {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .copy-right p {
+    font-size: 16px;
+  }
+}
+/* ################################################### */
